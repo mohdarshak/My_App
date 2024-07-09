@@ -12,10 +12,10 @@ class ScreenAbout extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                Text('Home'),
+                Text('About'),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed('about');
+                    Navigator.of(context).pushNamed('home');
                   },
                   child: Text('Goto Home'),
                 )

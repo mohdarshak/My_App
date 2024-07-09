@@ -1,3 +1,5 @@
+import 'package:app/Screen/about.dart';
+import 'package:app/Screen/home.dart';
 import 'package:app/Screen/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +18,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: ScreenSplash(),
+      routes: {
+        'home': (ctx) {
+          return ScreenHome();
+        },
+        'about': (ctx) {
+          return ScreenAbout();
+        }
+      },
     );
   }
 }

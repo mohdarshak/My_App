@@ -1,3 +1,4 @@
+import 'package:app/Screen/home.dart';
 import 'package:flutter/material.dart';
 
 class ScreenLogin extends StatelessWidget {
@@ -54,6 +55,8 @@ class ScreenLogin extends StatelessWidget {
     final _password = _passwordController.text;
     if (_username == _password) {
       //gotohome
+      Navigator.of(ctx)
+          .pushReplacement(MaterialPageRoute(builder: (ctx) => ScreenHome()));
     } else {
       final _errorMessage = 'Username Password does not match';
       //snackbar
